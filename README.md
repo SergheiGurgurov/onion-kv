@@ -4,7 +4,7 @@ this is a simple key-value store written in golang
 
 # installation
 
-### npm
+### npm (coming soon)
 
 ```sh
 npm install -g onion-kv
