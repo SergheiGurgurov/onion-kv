@@ -84,6 +84,12 @@ echo '{
     "linux",
     "win32"
   ],
+  "keywords": [
+    "onion-kv",
+    "key-value",
+    "store",
+    "database"
+  ],
   "cpu": [
     "arm64",
     "x64"
@@ -95,9 +101,9 @@ jq "
 .version=\"${version}\" |
 .optionalDependencies={
     \"onion-kv-linux-x64\": \"${version}\",
-    \"onion-kv-linux-arm\": \"${version}\",
+    \"onion-kv-linux-arm64\": \"${version}\",
     \"onion-kv-darwin-x64\": \"${version}\",
-    \"onion-kv-darwin-arm\": \"${version}\",
+    \"onion-kv-darwin-arm64\": \"${version}\",
     \"onion-kv-win32-x64\": \"${version}\"
 }
 " > ./build/package.json
@@ -107,9 +113,9 @@ mkdir ./build/bin
 cat ./cli.js > ./build/bin/cli.js
 
 echo "
-darwin-arm
+darwin-arm64
 darwin-x64
-linux-arm
+linux-arm64
 linux-x64
 win32-x64
 " > ./build/.npmignore

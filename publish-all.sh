@@ -14,7 +14,7 @@ publish_platform
 
 goarch="arm64"
 goos="linux"
-packagearch="arm"
+packagearch="arm64"
 packageos="linux"
 extension=""
 
@@ -30,7 +30,7 @@ publish_platform
 
 goarch="arm64"
 goos="darwin"
-packagearch="arm"
+packagearch="arm64"
 packageos="darwin"
 extension=""
 
